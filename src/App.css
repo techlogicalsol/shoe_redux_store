@@ -1,38 +1,191 @@
-.App {
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.myImg{
+  width: 100%;
+  border-bottom: 1px solid #88B04B;
+}
+
+.card-body{
+  background-color: white;
+  padding: 10px;
+  color: #333;
+  
+  
+}
+
+
+
+.myLink{
+  color: black;
+}
+
+.myLink:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.card-body h6{
+  font-weight: 900;
+  
+}
+
+
+
+.price{
+  text-decoration: line-through;
+  font-size: 16px;
+  font-weight: 900;
+  color: darkgrey;
+}
+
+.discount{
+  margin-left: 10px;
+  color: red;
+  font-size: 14px;
+  font-weight: 900;
+  width: 100%;
+}
+
+.discountPrice{
+  width: 100%;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 900;
+  color: #333;
+}
+
+/*----DetailM----*/
+
+.detail_price{
+  font-size: 26px;
+  font-weight: 900;
+  text-decoration: line-through;
+  margin-right: 40px;
+  color: red;
+}
+
+.detail_discountPrice{
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.dec,
+.inc{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.delete{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.delete:hover{
+  color: red;
+  transition: 1s;
+}
+
+.inc{
+  margin-right: 20px;
+}
+
+.quantity{
+  width: 150px;
+  
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  align-items: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.myDetailM{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.myCart{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.mySpan{
+  width: 40px;
+  height: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav{
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart_head{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+ 
+}
+
+.myWidth{
+  width: 160px;
+  background-color: #f1f1f1;
+  font-weight: 700;
+  justify-content: center;
+  display: flex;
+
+}
+
+.myWidth1{
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  
+}
+
+
+
+.myCartProduct{
+  width: 100%;
+}
+
+.myWidthSum{
+  background-color: #f1f1f1;
+  font-weight: 700;
+  width: 100%;
+}
+
+.total_item{
+  display: flex;
+  align-items: center;
+}
+
+
+#tQty{
+  text-align: right;
+  width: 50%;
+  
+}
+
+.total_price{
+  display: flex;
+  align-items: center;
+}
+
+#tPrice{
+  text-align: right;
+  width: 50%;
 }
